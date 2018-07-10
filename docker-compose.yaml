@@ -5,15 +5,15 @@ services:
         volumes:
           - ./data/db:/data/db
         ports:
-            - "27017:27017"
+            - 27017:27017
         expose:
-            - "27017"  
+            - 27017  
     web:
         build: .
         ports:
-          - "3000:3000"
+          - 4200:4200
         expose: 
-          - "3000"
+          - 4200
         depends_on:
           - mongo
         links:
