@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { CompanyService } from './company.service';
 import { CustomHttpInterceptor } from './auth.interceptor';
 
 @NgModule({
@@ -14,14 +13,7 @@ import { CustomHttpInterceptor } from './auth.interceptor';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [
-    CompanyService,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: CustomHttpInterceptor,
-      multi: true
-    }
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { CompanyService } from './company.service';
-import { Company } from './company';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -10,11 +7,5 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
   title = 'app';
-  companys: Company[];
 
-  constructor(private companyService: CompanyService) {
-    this.companyService.getCompany().subscribe(data => {
-      this.companys = data;
-    });
-  }
 }
