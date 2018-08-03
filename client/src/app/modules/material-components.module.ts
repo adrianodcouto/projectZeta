@@ -12,7 +12,9 @@ import {
   MatProgressSpinnerModule,
   MatIconModule,
   MatSidenavModule,
-  MatListModule
+  MatListModule,
+  MatGridListModule,
+  MatMenuModule
 } from '@angular/material';
 
 @NgModule({
@@ -28,8 +30,10 @@ import {
     MatToolbarModule,
     MatIconModule,
     MatListModule,
+    MatGridListModule,
     FlexLayoutModule,
-    LayoutModule
+    LayoutModule,
+    MatMenuModule
   ],
   exports: [
     CommonModule,
@@ -43,7 +47,9 @@ import {
     MatToolbarModule,
     MatIconModule,
     MatListModule,
-    FlexLayoutModule
+    MatGridListModule,
+    FlexLayoutModule,
+    MatMenuModule
   ],
   declarations: []
 })
