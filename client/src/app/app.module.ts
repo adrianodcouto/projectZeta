@@ -7,23 +7,32 @@ import { FormsModule } from '@angular/forms';
 
 // COMPONENTS
 import { AppComponent } from '@app/app.component';
+import { LoginComponent } from '@components/login/login.component';
 
 // ROUTING
 import { AppRoutingModule } from '@modules/app-routing.module';
 
 // LIBS
 import { MaterialComponentsModule } from '@modules/material-components.module';
-import { LoginComponent } from '@components/login/login.component';
+import { DashComponent } from '@components/dash/dash.component';
+import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent, DashComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     MaterialComponentsModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
