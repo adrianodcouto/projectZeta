@@ -6,6 +6,7 @@ case $1 in
     sudo docker exec -it $ID bash
      ;;
     "a") sudo docker-compose down --rmi all;;
+	"c") docker run -d -p 27017:27017 -v ./data:/data/db mongo ;;
 	*) echo "INVALID NUMBER!" ;;
 esac
 

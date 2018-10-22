@@ -1,13 +1,13 @@
-package org.leo.churros;
+package org.leo.projectzeta;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ChurrosApplication {
+public class ProjectZetaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ChurrosApplication.class, args);
+		SpringApplication.run(ProjectZetaApplication.class, args);
 	}
 
 }

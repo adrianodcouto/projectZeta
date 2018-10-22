@@ -14,7 +14,10 @@ import {
   MatSidenavModule,
   MatListModule,
   MatGridListModule,
-  MatMenuModule
+  MatSelectModule,
+  MatMenuModule,
+  MatOptionModule,
+  MatDividerModule
 } from '@angular/material';
 
 @NgModule({
@@ -33,7 +36,10 @@ import {
     MatGridListModule,
     FlexLayoutModule,
     LayoutModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatDividerModule
   ],
   exports: [
     CommonModule,
@@ -49,7 +55,11 @@ import {
     MatListModule,
     MatGridListModule,
     FlexLayoutModule,
-    MatMenuModule
+    LayoutModule,
+    MatMenuModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatDividerModule
   ],
   declarations: []
 })

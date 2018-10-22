@@ -13,10 +13,9 @@
     "lib": ["es2017", "dom"],
     "paths": {
       "@app/*": ["src/app/*"],
-      "@directive/*": ["src/app/directive/*"],
-      "@service/*": ["src/app/service/*"],
-      "@modules/*": ["src/app/modules/*"],
-      "@components/*": ["src/app/components/*"]
+      "@components/*": ["src/app/components/*"],
+      "@candidate/*": ["src/app/components/candidate/*"],
+      "@model/*": ["src/app/model/*"]
     }
   }
 }

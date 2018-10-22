@@ -1,4 +1,4 @@
-package org.leo.churros.config.server;
+package org.leo.projectzeta.config.server;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package org.leo.churros.config.server;
+package org.leo.projectzeta.config.server;
 
 import java.util.Arrays;
 

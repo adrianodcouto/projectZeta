@@ -1,0 +1,15 @@
+.container {
+    margin: 10px;
+    padding: 10px;
+}
+
+.app-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .mat-card {
+    width: calc(100% - 70px);
+    height: calc(100% - 70px);
+  }
+  
