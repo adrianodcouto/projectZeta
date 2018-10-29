@@ -1,0 +1,40 @@
+<div class="container">
+
+  <h1 class="mat-h1">Edit Candidate</h1>
+
+  <hr>
+
+  <form class="default-form">
+
+    <mat-form-field class="default-form-field">
+      <input matInput placeholder="Name" [value]="candidate.name">
+    </mat-form-field>
+
+    <mat-form-field class="default-form-field">
+      <input matInput placeholder="Last Name" [value]="candidate.lastName">
+    </mat-form-field>
+
+    <mat-form-field class="default-form-field">
+
+      <mat-chip-list #chipList>
+
+        <mat-chip *ngFor="let q of candidate.qualificacoes" selectable="true" removable="true" (removed)="remove(q.fullName())">
+          {{q.fullName()}}
+          <mat-icon matChipRemove>cancel</mat-icon>
+        </mat-chip>
+
+        <input placeholder="Qualificacoes" #qualificacoesInput [matAutocomplete]="auto" [matChipInputFor]="chipList">
+
+      </mat-chip-list>
+
+      <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+        <mat-option *ngFor="let q of filteredQualificacoes" [value]="q.descricao">
+          {{q.fullName()}}
+        </mat-option>
+      </mat-autocomplete>
+
+    </mat-form-field>
+
+  </form>
+
+</div>

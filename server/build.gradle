@@ -26,5 +26,6 @@ dependencies {
 	compile group: 'org.springframework.security.oauth', name: 'spring-security-oauth2', version: '2.3.3.RELEASE'
 	compile group: 'com.google.guava', name: 'guava', version: '25.1-jre'
 	compile('org.springframework.boot:spring-boot-devtools')
+	compile('org.springframework.data:spring-data-mongodb')
 
 }

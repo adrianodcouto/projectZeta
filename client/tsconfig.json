@@ -15,7 +15,8 @@
       "@app/*": ["src/app/*"],
       "@components/*": ["src/app/components/*"],
       "@candidate/*": ["src/app/components/candidate/*"],
-      "@model/*": ["src/app/model/*"]
+      "@model/*": ["src/app/model/*"],
+      "@services/*": ["src/app/services/*"]
     }
   }
 }

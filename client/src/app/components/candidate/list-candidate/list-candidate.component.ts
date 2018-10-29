@@ -1,5 +1,6 @@
 import { Candidate } from '@model/Candidate';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-candidate',
@@ -12,16 +13,14 @@ export class ListCandidateComponent implements OnInit {
 
   itensPorPagina: number[] = [5, 10, 25, 100];
 
-  constructor() { }
+  constructor(private router: Router) {
+
+  }
 
   ngOnInit() {
-    this.candidates.push(new Candidate('Leonardo Otero'));
-    this.candidates.push(new Candidate('Bozo da Silva'));
-    this.candidates.push(new Candidate('Pedro Pedreira'));
-    this.candidates.push(new Candidate('Waldisnei Santos'));
-    this.candidates.push(new Candidate('Heman de Jesus'));
-    this.candidates.push(new Candidate('Takama Sanomoru'));
-    this.candidates.push(new Candidate('Catiani Pingu'));
+    let candidate: Candidate = new Candidate('Leonardo', 'Otero', 10);
+
+    this.candidates.push(candidate);
   }
 
 }

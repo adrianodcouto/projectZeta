@@ -17,7 +17,9 @@ import {
   MatSelectModule,
   MatMenuModule,
   MatOptionModule,
-  MatDividerModule
+  MatDividerModule,
+  MatChipsModule,
+  MatAutocompleteModule
 } from '@angular/material';
 
 @NgModule({
@@ -39,7 +41,9 @@ import {
     MatMenuModule,
     MatSelectModule,
     MatOptionModule,
-    MatDividerModule
+    MatDividerModule,
+    MatChipsModule,
+    MatAutocompleteModule
   ],
   exports: [
     CommonModule,
@@ -59,8 +63,10 @@ import {
     MatMenuModule,
     MatSelectModule,
     MatOptionModule,
-    MatDividerModule
+    MatDividerModule,
+    MatChipsModule,
+    MatAutocompleteModule
   ],
   declarations: []
 })
-export class MaterialComponentsModule {}
+export class MaterialComponentsModule { }

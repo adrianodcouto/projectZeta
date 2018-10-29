@@ -18,18 +18,23 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
 
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
-		http.cors().and().authorizeRequests().anyRequest().authenticated().and().authorizeRequests().antMatchers(HttpMethod.OPTIONS).permitAll();
+		http.authorizeRequests().anyRequest().permitAll();
+		//http.cors().and().authorizeRequests().anyRequest().authenticated().and().authorizeRequests().antMatchers(HttpMethod.OPTIONS).permitAll();
 	}
 
 	@Bean
 	public CorsConfigurationSource corsConfigurationSource() {
+
 		CorsConfiguration configuration = new CorsConfiguration();
+
 		configuration.setAllowedOrigins(Arrays.asList("*"));
 		configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
 		configuration.setAllowedHeaders(Arrays.asList("authorization", "content-type", "x-auth-token"));
 		configuration.setExposedHeaders(Arrays.asList("x-auth-token"));
+
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		source.registerCorsConfiguration("/**", configuration);
+
 		return source;
 	}
 }

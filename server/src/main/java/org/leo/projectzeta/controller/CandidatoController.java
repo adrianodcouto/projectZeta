@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/secured/company")
+@RequestMapping("/secured/candidato")
 @CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 public class CandidatoController {
 

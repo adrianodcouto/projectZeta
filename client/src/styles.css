@@ -5,3 +5,18 @@ body {
   margin: 0;
   background-color: #fafafa;
 }
+
+.container {
+  margin: 10px;
+  padding: 10px;
+}
+
+.default-form {
+  min-width: 150px;
+  width: 65%;
+  padding: 40px;
+}
+
+.default-form-field {
+  width: 100%;
+}
